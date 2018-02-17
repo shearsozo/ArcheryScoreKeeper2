@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.archeryscorekeeper2.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/backgroundTarget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/target" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/button_marginLeft"
+                    android:layout_weight="2"
+                    android:text="@string/team_a"
+                    android:textColor="@color/team_color"
+                    android:textSize="@dimen/team_text_size" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/score_a"
+                    android:textColor="@color/team_color"
+                    android:textSize="@dimen/team_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/tenA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginRight"
+                    android:layout_marginStart="@dimen/button_marginLeft"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow2"
+                    android:onClick="addTenForTeamA"
+                    android:text="@string/arrow_ten" />
+
+                <Button
+                    android:id="@+id/sevenA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginRight"
+                    android:layout_marginStart="@dimen/button_marginLeft"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow2"
+                    android:onClick="addSevenForTeamA"
+                    android:text="@string/arrow_seven" />
+
+                <Button
+                    android:id="@+id/fiveA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginRight"
+                    android:layout_marginStart="@dimen/button_marginLeft"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow2"
+                    android:onClick="addFiveForTeamA"
+                    android:text="@string/arrow_five" />
+
+                <Button
+                    android:id="@+id/threeA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginRight"
+                    android:layout_marginStart="@dimen/button_marginLeft"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow2"
+                    android:onClick="addThreeForTeamA"
+                    android:text="@string/arrow_three" />
+
+                <Button
+                    android:id="@+id/oneA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginRight"
+                    android:layout_marginStart="@dimen/button_marginLeft"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow2"
+                    android:onClick="addOneForTeamA"
+                    android:text="@string/arrow_one" />
+
+                <Button
+                    android:id="@+id/missedArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginRight"
+                    android:layout_marginStart="@dimen/button_marginLeft"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow5"
+                    android:onClick="subtractOneForTeamA"
+                    android:text="@string/missedArrow" />
+
+                <TextView
+                    android:id="@+id/missedCountTeamA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="25dp"
+                    android:layout_weight="1"
+                    android:text="@string/missed_count"
+                    android:textColor="@color/team_color"
+                    android:textSize="@dimen/missed_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/button_marginLeft"
+                    android:layout_weight="2"
+                    android:text="@string/team_b"
+                    android:textColor="@color/team_color"
+                    android:textSize="@dimen/team_text_size" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/button_marginRight"
+                    android:layout_weight="1"
+                    android:text="@string/score_b"
+                    android:textColor="@color/team_color"
+                    android:textSize="@dimen/team_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/tenB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginLeft"
+                    android:layout_marginStart="@dimen/button_marginRight"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow4"
+                    android:onClick="addTenForTeamB"
+                    android:text="@string/arrow_ten" />
+
+                <Button
+                    android:id="@+id/sevenB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginLeft"
+                    android:layout_marginStart="@dimen/button_marginRight"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow4"
+                    android:onClick="addSevenForTeamB"
+                    android:text="@string/arrow_seven" />
+
+                <Button
+                    android:id="@+id/fiveB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginLeft"
+                    android:layout_marginStart="@dimen/button_marginRight"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow4"
+                    android:onClick="addFiveForTeamB"
+                    android:text="@string/arrow_five" />
+
+                <Button
+                    android:id="@+id/threeB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginLeft"
+                    android:layout_marginStart="@dimen/button_marginRight"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow4"
+                    android:onClick="addThreeForTeamB"
+                    android:text="@string/arrow_three" />
+
+                <Button
+                    android:id="@+id/oneB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginLeft"
+                    android:layout_marginStart="@dimen/button_marginRight"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow4"
+                    android:onClick="addOneForTeamB"
+                    android:text="@string/arrow_one" />
+
+                <Button
+                    android:id="@+id/missedArrowB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/button_marginLeft"
+                    android:layout_marginStart="@dimen/button_marginRight"
+                    android:layout_weight="1"
+                    android:background="@drawable/arrow6"
+                    android:onClick="subtractOneForTeamB"
+                    android:text="@string/missedArrow" />
+
+                <TextView
+                    android:id="@+id/missedCountTeamB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="25dp"
+                    android:layout_weight="1"
+                    android:text="@string/missed_count"
+                    android:textColor="@color/team_color"
+                    android:textSize="@dimen/missed_text_size" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="resetScore"
+        android:text="@string/reset_button" />
+</RelativeLayout>

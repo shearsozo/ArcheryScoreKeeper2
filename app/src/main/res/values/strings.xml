@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ArcheryScoreKeeper2</string>
+    <string name="team_a">Team A=</string>
+    <string name="arrow_ten">+10</string>
+    <string name="arrow_seven">+7</string>
+    <string name="arrow_five">+5</string>
+    <string name="arrow_three">+3</string>
+    <string name="arrow_one">+1</string>
+    <string name="team_b">Team B=</string>
+    <string name="score_a">0</string>
+    <string name="score_b">0</string>
+    <string name="missed_count">0</string>
+    <string name="missedArrow">Missed Arrows</string>
+    <string name="reset_button">Reset</string>
+</resources>
