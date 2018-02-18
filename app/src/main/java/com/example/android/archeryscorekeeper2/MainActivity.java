@@ -28,6 +28,25 @@ public class MainActivity extends AppCompatActivity {
     int missedCountTeamB = 0;
 
     @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("scoreTeamA", scoreTeamA);
+        outState.putInt("scoreTeamB", scoreTeamB);
+        outState.putInt("missedCountTeamA", missedCountTeamA);
+        outState.putInt("missedCountTeamB", missedCountTeamB);
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        scoreTeamA = savedInstanceState.getInt("scoreTeamA");
+        scoreTeamB = savedInstanceState.getInt("scoreTeamB");
+        missedCountTeamA = savedInstanceState.getInt("missedCountTeamA");
+        missedCountTeamB = savedInstanceState.getInt("missedCountTeamB");
+
+    }
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -37,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         displayMissedCountTeamB(0);
 
     }
+
     /**
      * increase score by 10 for Team A
      */
@@ -169,7 +189,11 @@ public class MainActivity extends AppCompatActivity {
     public void resetScore(View v) {
         scoreTeamA = 0;
         scoreTeamB = 0;
+        missedCountTeamA = 0;
+        missedCountTeamB = 0;
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
+        displayMissedCountTeamA(missedCountTeamA);
+        displayMissedCountTeamB(missedCountTeamB);
     }
 }

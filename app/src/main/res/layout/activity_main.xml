@@ -46,6 +46,7 @@
 
                 <TextView
                     android:id="@+id/team_a_score"
+                    android:freezesText="true"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -135,6 +136,7 @@
 
                 <TextView
                     android:id="@+id/missedCountTeamA"
+                    android:freezesText="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -177,6 +179,7 @@
 
                 <TextView
                     android:id="@+id/team_b_score"
+                    android:freezesText="true"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="@dimen/button_marginRight"
@@ -267,6 +270,7 @@
 
                 <TextView
                     android:id="@+id/missedCountTeamB"
+                    android:freezesText="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
