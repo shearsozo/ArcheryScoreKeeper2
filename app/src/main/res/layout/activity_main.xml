@@ -7,18 +7,18 @@
     tools:context="com.example.android.archeryscorekeeper2.MainActivity">
 
     <View
+        android:id="@+id/grayBar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
-        android:background="@android:color/darker_gray"
-        android:id="@+id/grayBar"/>
+        android:background="@android:color/darker_gray"/>
 
     <ImageView
         android:id="@+id/backgroundTarget"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitCenter"
         android:layout_below="@+id/grayBar"
+        android:scaleType="fitCenter"
         android:src="@drawable/target" />
 
     <LinearLayout
@@ -48,10 +48,10 @@
 
                 <TextView
                     android:id="@+id/team_a_score"
-                    android:freezesText="true"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:freezesText="true"
                     android:text="@string/score_a"
                     android:textColor="@color/team_color"
                     android:textSize="@dimen/team_text_size" />
@@ -138,12 +138,12 @@
 
                 <TextView
                     android:id="@+id/missedCountTeamA"
-                    android:freezesText="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginBottom="25dp"
                     android:layout_weight="1"
+                    android:freezesText="true"
                     android:text="@string/missed_count"
                     android:textColor="@color/team_color"
                     android:textSize="@dimen/missed_text_size" />
@@ -181,11 +181,11 @@
 
                 <TextView
                     android:id="@+id/team_b_score"
-                    android:freezesText="true"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="@dimen/button_marginRight"
                     android:layout_weight="1"
+                    android:freezesText="true"
                     android:text="@string/score_b"
                     android:textColor="@color/team_color"
                     android:textSize="@dimen/team_text_size" />
@@ -272,12 +272,12 @@
 
                 <TextView
                     android:id="@+id/missedCountTeamB"
-                    android:freezesText="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginBottom="25dp"
                     android:layout_weight="1"
+                    android:freezesText="true"
                     android:text="@string/missed_count"
                     android:textColor="@color/team_color"
                     android:textSize="@dimen/missed_text_size" />
