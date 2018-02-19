@@ -10,13 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
-        android:background="@android:color/darker_gray" />
+        android:background="@android:color/darker_gray"
+        android:id="@+id/grayBar"/>
 
     <ImageView
         android:id="@+id/backgroundTarget"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitCenter"
+        android:layout_below="@+id/grayBar"
         android:src="@drawable/target" />
 
     <LinearLayout
