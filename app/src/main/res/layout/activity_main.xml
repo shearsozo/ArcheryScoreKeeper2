@@ -20,7 +20,7 @@
         android:layout_below="@+id/grayBar"
         android:scaleType="fitCenter"
         android:src="@drawable/target" />
-
+    <!--I designed the image in Adobe Photoshop-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -75,7 +75,7 @@
                     android:background="@drawable/arrow2"
                     android:onClick="addTenForTeamA"
                     android:text="@string/arrow_ten" />
-
+                <!--I designed the image in Adobe Photoshop-->
                 <Button
                     android:id="@+id/sevenA"
                     android:layout_width="wrap_content"
@@ -135,7 +135,7 @@
                     android:background="@drawable/arrow5"
                     android:onClick="subtractOneForTeamA"
                     android:text="@string/missedArrow" />
-
+                <!--I designed the image in Adobe Photoshop-->
                 <TextView
                     android:id="@+id/missedCountTeamA"
                     android:layout_width="wrap_content"
